@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .float-img { 
+            float: left ;
+            margin-right:15px;
+        }
+        .potong {
+        width: 200px;         
+        height: 180px;        
+        object-fit: cover;    
+        border-radius: 20px; 
+        border: 3px solid #333; 
+    }
+         .bulat {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%; 
+        border: 3px solid #333;
+    }
+        .Bulan-Bulat {
+            border-radius: 50%;
+            border: 3px solid red;
+        }
+        .bulan-melengkung {
+            border-radius: 15px;
+            border: 3px solid red;
+        }
+        .bulan-tupat {
+            transform: rotate(45deg);
+            border: 3px solid red;
+            position: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Png Setting</title>
+</head>
+<body>
+    <h1>Panduan Menggunakan Gambar di Html</h1>
+    <section>
+        <h2>1.Memasang Gambar Pada Html</h2>
+        <img src="porto.jpg" alt="Gambar Bulan">
+    </section>
+    <section><h2>2.Format Gambar Yang didukung</h2>
+        <li>APNG - Animated Portable Network Graphics</li>
+        <li>ICO - Microsoft Icon (.ico, .cur)</li>
+        <li>JPEG - Untuk foto dan gambar kompleks</li>
+        <li>PNG - Untuk transparansi dan kualitas tinggi</li>
+        <li>GIF - Untuk animasi sederhana</li>
+        <li>SVG - Untuk grafis vektor</li>
+        <li>WebP - Format modern dengan kompresi baik</li>
+    </section>
+    <section>
+        <h2>3.Mengambil File Dari Hardisk </h2>
+        <img src="porto.jpg" alt="Lengkap Ni" width="150">
+    </section>
+    <section><h2>4.Menyisipkan Gambar Dalam Paragraf </h2>
+        <img src="porto.jpg" alt="Bulan" width="50" class="float-img">
+        <p>Bulan Berwarna Merah Adalah yang Paling keren</p>
+    </section>
+    <br>
+    <section><h2>5.Image Map</h2>
+    <img src="petaindonesia.jpeg" alt="Peta" width="600" usemap="#map-indonesia">
+    <map name="map-indonesia">
+        <area
+        shape="rect"
+        coords="158,163,254,266"
+        href="banten.html"
+        alt="Banten"
+      />
+      <area
+        shape="rect"
+        coords="178,193,260,274"
+        href="dki_jakarta.html"
+        alt="DKI JAKARTA"
+      />
+      <area
+        shape="rect"
+        coords="201,233,272,276"
+        href="jateng.html"
+        alt="Jawa Tengah"
+      />
+    </section>
+    <section>
+        <h2>6. Membuat Link pada Gambar</h2>
+        <a href="https://www.tempo.co/lingkungan/proses-warna-bulan-jadi-merah-saat-terjadi-gerhana-berikut-penjelasannya-76150" target="_blank">
+            <img src="porto.jpg" alt="Bulan" width="100">
+        </a>
+    </section>
+    <section>
+        <h2>7. Gambar Sebagai Link</h2>
+        <a href="https://www.tempo.co/lingkungan/proses-warna-bulan-jadi-merah-saat-terjadi-gerhana-berikut-penjelasannya-76150" target="_blank">
+            <img src="porto.jpg" alt="Logo-Bulan" width="80">
+        </a>
+    </section>
+    <section>
+        <h2>8. Auto Thumbnail</h2>
+        <img src="porto.jpg" alt="Bulan" width="200">
+    </section>
+    <section>
+        <h2>9. dengan style</h2>
+        <img src="porto.jpg" alt="Bulan Dengan Border" width="200" style="border: 2px solid red;">
+        <img src="porto.jpg" alt="Bulan Dengan Border" class="potong">
+        <img src="porto.jpg" alt="Bulan Dengan Border" class="bulat">
+    </section>
+    <section>
+        <h2>10. dengan berbagai bentuk</h2>
+        <h3>1. Lingkaran</h3>
+        <img src="porto.jpg" alt="Lingkaran" width="150" class="Bulan-Bulat">
+        
+        <h3>2. Sudut Melengkung</h3>
+        <img src="porto.jpg" alt="Sudut Melengkung" width="150" class="bulan-melengkung">
+        
+        <h3>3. Belah Ketupat</h3>
+        <img src="porto.jpg" alt="Belah Ketupat" width="150" class="bulan-tupat">
+    </section>
+</body>
+</html>
